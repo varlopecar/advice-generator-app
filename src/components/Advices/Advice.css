@@ -9,7 +9,7 @@
 }
 
 .advice-description {
-  margin: 2rem;
+  margin: 1rem;
   color: var(--light-cyan);
   text-align: center;
   font-size: 28px;
@@ -18,6 +18,8 @@
 .advice-number {
     color: var(--neon-green);
     margin-top: 2rem;
+    font-size: 10px;
+    letter-spacing: .2rem;
 }
 
 .pattern {

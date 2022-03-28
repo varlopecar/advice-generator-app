@@ -1,0 +1,11 @@
+.button {
+    width: 4rem;
+    height: 4rem;
+    background: var(--neon-green);
+    border-radius: 100px;
+    border: none;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 40px var(--neon-green);
+}
