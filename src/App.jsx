@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Card from './components/Card'
+import Advice from './components/Advices/Advice'
 
 function App() {
   return (
-    <Card />
+    <Advice />
   )
 }
 

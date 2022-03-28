@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 1rem 8rem;
+  background-color: var(--dark-grayish-blue);
+}
+
+.advice-description {
+  margin: 2rem;
+  color: var(--light-cyan);
+  text-align: center;
+  font-size: 28px;
+}
+
+.advice-number {
+    color: var(--neon-green);
+    margin-top: 2rem;
+}
+
+.pattern {
+    margin-bottom: 2rem;
+}
