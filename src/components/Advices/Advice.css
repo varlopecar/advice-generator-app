@@ -1,27 +1,27 @@
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0.5rem;
-  margin: 1rem 8rem;
-  background-color: var(--dark-grayish-blue);
-}
-
 .advice-description {
-  margin: 1rem;
   color: var(--light-cyan);
   text-align: center;
   font-size: 28px;
 }
 
+.text-description {
+  width: 100%;
+}
+
 .advice-number {
-    color: var(--neon-green);
-    margin-top: 2rem;
-    font-size: 10px;
-    letter-spacing: .2rem;
+  color: var(--neon-green);
+  margin-top: 2rem;
+  font-size: 10px;
+  letter-spacing: 0.2rem;
 }
 
 .pattern {
-    margin-bottom: 2rem;
+  content: url(../../assets/images/pattern-divider-desktop.svg);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px){
+  .pattern {
+    content: url(../../assets/images/pattern-divider-mobile.svg);
+  }
 }
