@@ -3,7 +3,6 @@ import Button from "../UI/Button";
 import "./Advice.css";
 
 const Advice = ({advice}) => {
-  console.log(advice.slip.id);
   return (
     <Card>
       <div className="advice-number">ADVICE #{advice.slip.id}</div>

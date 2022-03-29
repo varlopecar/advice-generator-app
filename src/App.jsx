@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Advice from "./components/Advices/Advice";
 
 function App() {
@@ -19,9 +19,7 @@ function App() {
     fetchAdvice(url);
   }, []);
 
-  return (
-    <Advice advice={advice} />
-  ) 
+  return <div>{advice ? <Advice advice={advice} /> : null}</div>;
 }
 
 export default App;
