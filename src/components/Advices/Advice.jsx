@@ -20,6 +20,7 @@ const Advice = () => {
   };
 
   useEffect(() => {
+    fetchAdvice(url)
   }, []);
 
   return (
