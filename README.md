@@ -2,7 +2,7 @@
 
 ### Links
 
-- Live Site URL: (https://https://advice-generator-app-pink.vercel.app/)
+- Live Site URL: (https://advice-generator-app-pink.vercel.app/)
 
 ### Built with
 
