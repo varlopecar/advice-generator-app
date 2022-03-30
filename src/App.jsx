@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable react/react-in-jsx-scope */
 import Advice from "./components/Advices/Advice";
 
 function App() {
-  const [advice, setAdvice] = useState(null);
-
-  const url = "https://api.adviceslip.com/advice";
-
-  const fetchAdvice = (url) => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setAdvice(data);
-      })
-      .catch((error) => console.log(error));
-  };
-
-  useEffect(() => {
-    fetchAdvice(url);
-  }, []);
-
-  return <div>{advice ? <Advice advice={advice} /> : null}</div>;
+  return <Advice />;
 }
 
 export default App;
+ 

@@ -1,11 +1,17 @@
+/* eslint-disable react/react-in-jsx-scope */
 import "./Button.css";
 
-const Button = () => {
-    return (
-        <div>
-            <button className="button"><img src="src\assets\images\icon-dice.svg" alt="" /></button>
-        </div>
-    )
-}
+// eslint-disable-next-line react/prop-types
+const Button = ({advice}) => {
+  return (
+    <div>
+      <div>
+        <button className="button" onClick={advice}>
+          <img src="src\assets\images\icon-dice.svg" alt="dice icon" />
+        </button>
+      </div>
+    </div>
+  );
+};
 
 export default Button;
