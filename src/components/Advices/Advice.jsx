@@ -2,25 +2,27 @@
 import React, { useState, useEffect } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
-import "./Advice.css";
+import "../../styles/Advice.css";
 
 const Advice = () => {
-  const [advice, setAdvice] = useState(null);
+  const [advice, setAdvice] = useState("");
 
   const url = "https://api.adviceslip.com/advice";
 
-  const fetchAdvice = () => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setAdvice(data);
-        console.log(data);
-      })
-      .catch((error) => console.log(error));
+  const fetchAdvice = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setAdvice(data);
+    // fetch(url)
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setAdvice(data);
+    //   })
+    //   .catch((error) => console.log(error));
   };
 
   useEffect(() => {
-    fetchAdvice(url)
+    fetchAdvice()
   }, []);
 
   return (
@@ -29,12 +31,12 @@ const Advice = () => {
         <Card>
           <div className="advice-number">ADVICE #{advice.slip.id}</div>
           <div className="advice-description">
-            <p className="text-description">"{advice.slip.advice}"</p>
+            <p className="text-description">{`"${advice.slip.advice}"`}</p>
           </div>
           <div>
-            <img className="pattern" />
+            <img className="pattern" alt="pattern" />
           </div>
-          <Button advice={fetchAdvice} />
+          <Button action={fetchAdvice} />
         </Card>
       ) : null}
     </div>

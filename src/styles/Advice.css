@@ -11,17 +11,14 @@
 .advice-number {
   color: var(--neon-green);
   margin-top: 2rem;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.2rem;
 }
 
 .pattern {
-  content: url(../../assets/images/pattern-divider-desktop.svg);
+  content: url(../../assets/images/pattern-divider-mobile.svg);
   margin-bottom: 2rem;
-}
-
-@media (max-width: 700px){
-  .pattern {
-    content: url(../../assets/images/pattern-divider-mobile.svg);
+  @media (min-width: 40rem) {
+    content: url(../../assets/images/pattern-divider-desktop.svg);
   }
 }

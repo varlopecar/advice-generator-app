@@ -1,13 +1,12 @@
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     width: 4rem;
     height: 4rem;
     background: var(--neon-green);
     border-radius: 100px;
     border: none;
     margin-bottom: -2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -15,5 +14,12 @@
 }
 
 .button:active {
-    transform: scale(1.2);
+    transform: rotate(360deg);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;   
+    align-self: center;
+    justify-self: center;
 }
