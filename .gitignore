@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# npm
+npm-debug.log*
+npm-debug.log
+npm-debug.log.*
+package-lock.json

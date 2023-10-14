@@ -1,30 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import "../../styles/Advice.css";
 
-const Advice = () => {
-  const [advice, setAdvice] = useState("");
-
-  const url = "https://api.adviceslip.com/advice";
-
-  const fetchAdvice = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setAdvice(data);
-    // fetch(url)
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     setAdvice(data);
-    //   })
-    //   .catch((error) => console.log(error));
-  };
-
-  useEffect(() => {
-    fetchAdvice()
-  }, []);
-
+const Advice = ({ advice, fetchAdvice }) => {
   return (
     <div>
       {advice ? (
